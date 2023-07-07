@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Produtos Catálogo</h1>
+
+
+        <div class="menu">
+
+            <div class="menu__busca">
+                <input type="text" class="txtBusca" placeholder="Nome produto..." />
+                <button class="btnBusca">Buscar</button>
+            </div>
+
+            <button class="menu__dropdown">Marca</button>
+            <div class="menu__dropdown__marcas">
+                <a href="#">Dashboard</a>
+                <a href="#">Setting</a>
+            </div>
+
+            <button class="menu__dropdown">Categoria</button>
+            <div class="menu__dropdown__categoria">
+                <a href="#">Dashboard</a>
+                <a href="#">Setting</a>
+            </div>
+            <button class="menu__dropdown">Ordenação</button>
+            <div class="menu__dropdown__ordenacao">
+                <a href="#">Dashboard</a>
+                <a href="#">Setting</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+
+
+        <section class="produtos" id="produtos">
+            <div class="produto__detalhe">
+                <img class="produto__detalhe__imagem">
+                <h2 class="produto__detalhe__nome"></h2>
+                <p class="produto__detalhe__preco"></p>
+                <p class="produto__detalhe__categoria"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Júlia Matias Reis.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

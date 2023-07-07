@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&family=Poppins&display=swap");
+
+:root {
+  --cor-fundo: #f8ede3;
+  --cor-primaria: #85586f;
+  --cor-secundaria: #dfd3c3;
+  --cor-terciaria: #d0b8a8;
+  --fonte-primaria: "Montserrat", sans-serif;
+  --fonte-secundaria: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fonte-primaria);
+  background-color: var(--cor-fundo);
+}
+
+.cabecalho {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.25rem 0;
+  align-items: center;
+}
+
+.menu__busca{
+  border: solid 0.10rem;
+  border-radius: 1rem;
+  width: auto;
+}
+
+.txtBusca{
+  float: left;
+  background-color: transparent;
+  padding-left: 0.5rem;
+  font-style: italic;
+  font-size: 1rem;
+  border: none;
+  height: 2rem;
+  width: auto;
+}
+
+.btnBusca{
+  color: var(--cor-primaria);
+  border: none;
+  float: left;
+  height: 2rem;
+  border-radius: 0 1rem 1rem 0;
+  width: 4rem;
+  font-weight:bold;
+  background:var(--cor-secundaria);
+}
+
+.menu__dropdown {
+  background-color: var(--cor-primaria);
+  color: var(--cor-fundo);
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.menu__dropdown__marcas,
+.menu__dropdown__categoria,
+.menu__dropdown__ordenacao {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  min-height: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.menu__dropdown:hover .menu__dropdown__marcas
+/* ,
+.menu__dropdown__categoria,
+.menu__dropdown__ordenacao */
+{
+  display: flex;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+.produtos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.produto__detalhe__nome {
+  color: var(--cor-primaria);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.produto__detalhe__preco {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--cor-primaria);
+}
+
+/* .dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+} */
+
+.rodape {
+  background-color: var(--cor-primaria);
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-secundaria);
+  text-align: center;
+  padding: 24px;
+}
