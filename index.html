@@ -12,52 +12,40 @@
     <header class="cabecalho">
         <h1 class="cabecalho__titulo">Produtos Catálogo</h1>
 
-
         <div class="menu">
-
             <div class="menu__busca">
                 <input type="text" class="txtBusca" placeholder="Nome produto..." />
                 <button class="btnBusca">Buscar</button>
             </div>
 
-            <button class="menu__dropdown">Marca</button>
-            <div class="menu__dropdown__marcas">
-                <p class="marcas">Fenty Beauty</p>
-                <p class="marcas">Rare Beauty</p>
+            <div class="menu__dropdown">
+                <button class="menu__dropdown__btn">Marca</button>
+                <div class="menu__dropdown__conteudo" id="marcas">
+                </div>
             </div>
 
-            <button class="menu__dropdown">Categoria</button>
-            <div class="menu__dropdown__categoria">
-                <p class="categoria">Lipstick</p>
-                <p class="categoria">Foundation</p>
+            <div class="menu__dropdown">
+                <button class="menu__dropdown__btn">Categoria</button>
+                <div class="menu__dropdown__conteudo" id="categorias">
+                </div>
             </div>
-            <button class="menu__dropdown">Ordenação</button>
-            <div class="menu__dropdown__ordenacao">
-                <p class="A-Z">Ordenação 1</p>
-                <p class="Z-A">Ordenação 2</p>
+
+            <div class="menu__dropdown">
+                <button class="menu__dropdown__btn">Ordenação</button>
+                <div class="menu__dropdown__conteudo">
+                    <p class="ordemCrescente" id="ordemCrescente">A - Z</p>
+                    <p class="ordemDecrescente" id="ordemDecrescente">Z - A</p>
+                    <p class="maiorValor" id="maiorValor">Maior Valor</p>
+                    <p class="menorValor" id="menorValor">Menor Valor</p>
+                    <p class="melhoresAvaliados" id="melhoresAvaliados">Melhores Avaliados</p>
+                </div>
             </div>
+
         </div>
-
     </header>
 
     <main>
         <section class="produtos" id="produtos">
-            <div class="produto__detalhe">
-                <img class="produto__detalhe__imagem" src="https://cdn.shopify.com/s/files/1/1338/0845/collections/lippie-pencil_grande.jpg?v=1512588769">
-                <h2 class="produto__detalhe__nome">Lippie Pencil</h2>
-                <div class="produto__detalhe__marca__preco">
-                    <p class="produto__detalhe__marca">colourpop</p>
-                    <p class="produto__detalhe__preco">$ 5.0</p>
-                </div>
-            </div>
-            <div class="produto__detalhe">
-                <img class="produto__detalhe__imagem" src="https://cdn.shopify.com/s/files/1/1338/0845/collections/lippie-pencil_grande.jpg?v=1512588769">
-                <h2 class="produto__detalhe__nome">Lippie Pencil</h2>
-                <div class="produto__detalhe__marca__preco">
-                    <p class="produto__detalhe__marca">colourpop</p>
-                    <p class="produto__detalhe__preco">$ 5.0</p>
-                </div>
-            </div>
         </section>
     </main>
 
@@ -65,7 +53,10 @@
         <p>Desenvolvido por Júlia Matias Reis.</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="app/main.js"></script>
+    <script src="app/criarCategorias.js"></script>
+    <script src="app/criarMarcas.js"></script>
+    <script src="app/criarProdutos.js"></script>
 </body>
 
 </html>

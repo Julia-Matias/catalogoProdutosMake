@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&family=Poppins&display=swap");
 
 :root {
-  --cor-fundo: #f8ede3;
+  --cor-fundo: white;
   --cor-primaria: #85586f;
   --cor-secundaria: #dfd3c3;
   --cor-terciaria: #d0b8a8;
@@ -16,17 +16,13 @@
 
 body {
   font-family: var(--fonte-primaria);
-  background-color: var(--cor-fundo);
 }
 
 .cabecalho {
   background-color: var(--cor-primaria);
   text-align: center;
   padding-top: 0.5rem;
-}
-
-.cabecalho__titulo {
-  color: var(--cor-secundaria);
+  color: var(--cor-terciaria);
 }
 
 .menu {
@@ -67,55 +63,54 @@ body {
 }
 
 .menu__dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.menu__dropdown__btn {
   background-color: var(--cor-primaria);
-  color: var(--cor-fundo);
+  color: var(--cor-terciaria);
   padding: 1rem;
   font-size: 1rem;
   border: none;
+  position: relative;
 }
 
-.menu__dropdown__marcas,
-.menu__dropdown__categoria,
-.menu__dropdown__ordenacao {
+.menu__dropdown__conteudo {
   display: none;
+  position: absolute;
+}
+
+.menu__dropdown__conteudo p {
   color: var(--cor-secundaria);
   background-color: var(--cor-primaria);
-  opacity: 0.8;
-  width: auto;
-  box-shadow: 5px 5px 15px -3px var(--cor-secundaria);
+  width: 10rem;
+  padding: 0.5rem;
+  text-align: center;
 }
 
-.menu__dropdown__marcas p {
-  background-color: #f1f1f1;
+.menu__dropdown__conteudo p:hover{
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+  font-style: italic;
 }
 
-.menu__dropdown:hover .menu__dropdown__marcas {
+.menu__dropdown:hover .menu__dropdown__conteudo {
   display: block;
+  cursor: pointer;
 }
-
-/* .menu__dropdown__marcas .marcas:hover
-,
-.menu__dropdown__categoria,
-.menu__dropdown__ordenacao {
-  display: flex;
-  flex-direction: column;
-  color: var(--cor-secundaria);
-  background-color: var(--cor-primaria);
-  opacity: 0.8;
-  width: auto;
-  box-shadow: 5px 5px 15px -3px var(--cor-secundaria);
-}
- */
 
 .produtos {
   display: flex;
   padding: 1rem;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .produto__detalhe {
   border: solid 0.15rem var(--cor-primaria);
   border-radius: 1rem;
+  width: 11rem;
 }
 
 .produto__detalhe__imagem {
