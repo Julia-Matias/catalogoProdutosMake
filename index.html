@@ -14,30 +14,30 @@
 
         <div class="menu">
             <div class="menu__busca">
-                <input type="text" class="txtBusca" placeholder="Nome produto..." />
-                <button class="btnBusca">Buscar</button>
+                <input type="text" class="txtBusca" id="nomeProduto" placeholder="Nome produto..." />
+                <button class="btnBusca" onclick="buscaNome(produtosFinais)">Buscar</button>
             </div>
 
             <div class="menu__dropdown">
                 <button class="menu__dropdown__btn">Marca</button>
-                <div class="menu__dropdown__conteudo" id="marcas">
-                </div>
+                <ul class="menu__dropdown__conteudo" id="marcas">
+                </ul>
             </div>
 
             <div class="menu__dropdown">
                 <button class="menu__dropdown__btn">Categoria</button>
-                <div class="menu__dropdown__conteudo" id="categorias">
-                </div>
+                <ul class="menu__dropdown__conteudo" id="categorias">
+                </ul>
             </div>
 
             <div class="menu__dropdown">
                 <button class="menu__dropdown__btn">Ordenação</button>
                 <div class="menu__dropdown__conteudo">
-                    <p class="ordemCrescente" id="ordemCrescente">A - Z</p>
-                    <p class="ordemDecrescente" id="ordemDecrescente">Z - A</p>
-                    <p class="maiorValor" id="maiorValor">Maior Valor</p>
-                    <p class="menorValor" id="menorValor">Menor Valor</p>
-                    <p class="melhoresAvaliados" id="melhoresAvaliados">Melhores Avaliados</p>
+                    <li class="ordemCrescente" id="AZ">A - Z</li>
+                    <li class="ordemDecrescente" id="ZA">Z - A</li>
+                    <li class="maiorValor" id="maiorValor">Maior Valor</li>
+                    <li class="menorValor" id="menorValor">Menor Valor</li>
+                    <li class="melhoresAvaliados" id="melhoresAvaliados">Melhores Avaliados</li>
                 </div>
             </div>
 
@@ -57,6 +57,9 @@
     <script src="app/criarCategorias.js"></script>
     <script src="app/criarMarcas.js"></script>
     <script src="app/criarProdutos.js"></script>
+    <script src="app/ordenacao.js"></script>
+    <script src="app/filtrarNome.js"></script>
+
 </body>
 
 </html>

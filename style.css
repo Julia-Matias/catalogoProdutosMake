@@ -81,18 +81,20 @@ body {
   position: absolute;
 }
 
-.menu__dropdown__conteudo p {
+.menu__dropdown__conteudo li {
   color: var(--cor-secundaria);
   background-color: var(--cor-primaria);
   width: 10rem;
   padding: 0.5rem;
   text-align: center;
+  list-style-type: none
 }
 
-.menu__dropdown__conteudo p:hover{
+.menu__dropdown__conteudo li:hover{
   background-color: var(--cor-terciaria);
   color: var(--cor-primaria);
   font-style: italic;
+  list-style-type: none
 }
 
 .menu__dropdown:hover .menu__dropdown__conteudo {
@@ -125,6 +127,7 @@ body {
   font-weight: 400;
   font-size: 1.2rem;
   text-align: center;
+  height: 8rem;
 }
 
 .produto__detalhe__marca__preco {
@@ -139,6 +142,14 @@ body {
   font-size: 1rem;
   font-weight: 400;
   color: var(--cor-primaria);
+}
+
+.produto__detalhe__avaliacoes {
+  color: var(--cor-primaria);
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
 }
 
 .rodape {
